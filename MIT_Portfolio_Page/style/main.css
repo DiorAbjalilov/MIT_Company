@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+/* background style */
+#portfolio {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)),
+    url("../images/image_2021-05-04_11-13-20.png") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+#portfolio::after {
+  position: absolute;
+  content: "";
+  width: 1414px;
+  height: 1414px;
+  right: 45%;
+  top: -21.6%;
+  border-radius: 50%;
+  background: #000059;
+  opacity: 0.85;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#portfolio::before {
+  position: absolute;
+  width: 1414px;
+  height: 1414px;
+  left: 34%;
+  top: -155%;
+  content: "";
+  border-radius: 50%;
+  background: #00005a;
+  opacity: 0.85;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#portfolio .portfolio {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#portfolio .bgButton {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  bottom: 0;
+}
+#portfolio .bgButtonOld {
+  position: absolute;
+  z-index: -1;
+  right: 50px;
+  bottom: 20px;
+}
+
+/* slider style */
+#portfolio .swiper-container {
+  width: 90%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portfolio .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 12px;
+  height: calc((88% - 30px) / 2);
+  box-shadow: 0 0 0.45em 0 rgba(0, 0, 0, 0.35);
+  /*Centerslidetextvertically*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+#portfolio .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+/* slider items style */
+
+#portfolio .imgCards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+#portfolio .cardButton {
+  right: 5px;
+  bottom: 5px;
+}
+
+#portfolio #portfolioInOut {
+  margin: -12px;
+  width: 100%;
+  height: 102%;
+  background-color: rgb(65, 65, 65);
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+}
+#portfolio .cardPortfolio {
+  z-index: 2;
+  width: 600px;
+  height: 350px;
+  transform: translate(50%, 50%);
+}
+#portfolio .imgBody {
+  width: 800px;
+}
+#portfolio .textCard {
+  margin-top: 50px;
+}
+#portfolio .linkCardButton {
+  list-style: none;
+  text-decoration: none;
+  background-color: #0029ff;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+#portfolio .linkCardButton:hover {
+  color: #0029ff;
+  background-color: white;
+  border: 1px solid #0029ff;
+}
+#portfolio #closeIcon {
+  position: absolute;
+  font-size: 40px;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+#portfolio .title_portfolio {
+  position: relative;
+  width: 100%;
+  display: flex;
+  z-index: 5;
+  justify-content: center;
+  margin: 85px 0 10px;
+}
+#portfolio .message {
+  position: relative;
+  width: 100%;
+  opacity: 1;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background: hsla(189, 71%, 84%, 0.507);
+}
+
+#portfolio #message_title {
+  position: relative;
+  z-index: 8;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#portfolio #message_title p {
+  width: 40%;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+  text-align: justify;
+  color: #fff;
+  margin-top: 10px;
+}
+#portfolio #message_title a {
+  width: 320px;
+  height: 42px;
+  background: #000059;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+}
+#portfolio .swiper-pagination-bullet {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.btn-primary {
+  background-color: #000000ce !important;
+  border: none !important;
+}
+.btn-primary:hover {
+  transition: background-color 0.2s;
+  background-color: #000000e7 !important;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+}
