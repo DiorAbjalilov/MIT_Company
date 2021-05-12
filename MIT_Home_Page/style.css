@@ -345,22 +345,22 @@
   }
 
   #home .rightMenu {
-    width: 34px;
+    width: 30px;
     height: 520px;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 100px;
-    z-index: 443;
+    z-index: 442;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     box-shadow: 0 0 20px grey;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+    transition: 0.25s;
     display: block;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
   }
 
   #home .rightMenu i {
@@ -390,14 +390,14 @@
   }
 
   #home .rightMenu ul {
-    padding: 40% 15% 15% 15%;
-    visibility: hidden;
-    margin-top: -50px;
+    padding: 10% 15% 30% 15%;
+    margin-top: 15%;
+    display: none;
   }
 
   .Visible {
-    visibility: visible !important;
-    transition-delay: 0.3s;
+    display: block !important;
+    transition-delay: 0.5s;
   }
 
   #home .rightMenu ul li {

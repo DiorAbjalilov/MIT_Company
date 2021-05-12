@@ -1,0 +1,50 @@
+@media only screen and (max-width: 700px) {
+  .displayFlexMesseger {
+    display: flex !important;
+  }
+  .carImgOne {
+    display: none !important;
+  }
+  .facebookMedia {
+    margin-top: 47px !important;
+  }
+  .inMedia {
+    margin-top: 47px !important;
+  }
+  .instagramMedia {
+    margin-top: 47px !important;
+  }
+  .youtubeMedia {
+    margin-top: 47px !important;
+  }
+  .InstagramPol {
+    display: none;
+  }
+  .FacebookPol {
+    display: none;
+  }
+  .InPol {
+    display: none;
+  }
+  .YouTubePol {
+    display: none;
+  }
+  .carImgTwo {
+    display: none;
+  }
+  .carImgThree {
+    display: none;
+  }
+  .colOne {
+    border: 0 !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .colOne {
+    border: 0 !important;
+    border-bottom: 1px solid !important;
+  }
+  .colTwo {
+    border: 0;
+  }
+}

@@ -147,6 +147,10 @@
   height: 208px;
   width: 229px;
   border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
 }
 
 #services section img {
@@ -252,6 +256,7 @@
   height: 120px;
   align-items: center;
   justify-content: space-between;
+  padding: 0 12%;
 }
 #services .services-a p {
   /* position: relative; */
@@ -281,4 +286,98 @@
   color: #fff;
   font-weight: 500;
   margin-left: 100px;
+}
+
+@media (max-width: 769px) {
+  #services .swiper-button-next {
+    margin-left: 0px;
+  }
+
+  #services .swiper-button-prev {
+    margin-left: -40px;
+  }
+  #services .services-a {
+    padding: 0;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  #services .swiper-button-next {
+    padding-left: 10px;
+  }
+
+  #services .swiper-button-prev {
+    margin-left: -30px;
+  }
+
+  #services .services-a a {
+    width: 110px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  #services .services-a p {
+    line-height: 1;
+    font-size: 12px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  #services .services-a {
+    padding: 0;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  #services #modal {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+  }
+
+  #services .services-a {
+    justify-content: center;
+    padding: 0;
+  }
+  #services .services-a a {
+    width: 220px;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  #services .services-a p {
+    width: 50%;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 7px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 665px) {
+  #services .services-a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  #services .services-a a {
+    margin: 0;
+    width: 180px;
+    margin-right: 10px;
+  }
+  #services .services-a p {
+    color: #222;
+    width: 80%;
+    padding-top: 10px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+  #services #modal {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+  }
 }

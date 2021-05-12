@@ -35,7 +35,7 @@
   padding-right: 33px;
 }
 #futter .InstagramPol {
-  /* display: none; */
+  display: none;
 }
 #futter .FooterInstagram:hover + .InstagramPol {
   display: block;

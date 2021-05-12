@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Home Page Style link -->
   <link rel="stylesheet" href="./MIT_Home_Page/style.css" />
   <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon" />
@@ -29,13 +28,14 @@
   <!-- About Page style link -->
   <link rel="stylesheet" href="./MIT_About_Page/style/AboutPage_Style.css" />
   <link rel="stylesheet" href="./MIT_About_Page/style/animation.css" />
+  <link rel="stylesheet" href="./MIT_About_Page/style/AboutResponsev.css">
   <!-- Portfolio Page Style link -->
   <link rel="stylesheet" href="./MIT_Portfolio_Page/style/main.css" />
-  <link rel="stylesheet" href="./MIT_Portfolio_Page/style/media.css" />
   <!-- Contact Page Style link -->
   <link rel="stylesheet" href="./MIT_Contact_Page/css/contact.css" />
   <!-- Footer Page Style link -->
   <link rel="stylesheet" href="./MIT_Futter_Page/FutterStyle/footerStyle.css" />
+  <link rel="stylesheet" href="./MIT_Futter_Page/FutterStyle/mediaFooter.css">
   <title>MIT COMPANY</title>
 </head>
 
@@ -67,13 +67,13 @@
           <li>
             <a href="" tabindex="5">Aloqa</a>
           </li>
-          <li style="color: #fff">
-            <i class="fa fa-phone"></i> +998 99 999 99 99 <br />
+          <li style="color: #fff; text-align: center;">
+            <a href=""><i class="fa fa-phone"></i> +998 99 999 99 99</a> <br />
             <a href=""><img src="./MIT_Home_Page/images/flag/uz 1.svg" style="width: 30px; margin-left: 2px" /></a>
-            <a href=""><img src="./MIT_Home_Page/images/flag/ru 1.svg" / style="width:
-                30px;margin-left: 2px;"></a>
             <a href=""><img src="./MIT_Home_Page/images/flag/us 1.svg" style="width: 30px; margin-left: 2px" /></a>
-            <a href=""><img src="./MIT_Home_Page/images/flag/fr 1.svg" style="width: 30px" /></a>
+            <a href=""><img src="./MIT_Home_Page/images/flag/ru 1.svg" style="width:
+                30px;margin-left: 2px;"></a>
+            <!-- <a href=""><img src="./MIT_Home_Page/images/flag/fr 1.svg" style="width: 30px" /></a> -->
           </li>
         </ul>
       </div>
@@ -105,10 +105,12 @@
     <div class="homeLeft">
       <div class="group">
         <h1>MIT <br />COMPANY</h1>
+
         <p>
           Lorem ipsum dolor sit amet,<br />
           consectetur
         </p>
+
         <br />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
@@ -177,7 +179,7 @@
   <section id="body_wrap">
     <div class="container block">
       <div class="title_h1">
-        <h1>Biz Haqimizda</h1>
+        <h1><span>Biz</span> Haqimizda</h1>
       </div>
       <div class="slider">
         <div class="swiper-container mySwiper">
@@ -361,12 +363,10 @@
           <div class="title_portfolio">
             <h1>Portfolio</h1>
           </div>
-          <!-- _______``` -->
           <div id="portfolioFather" class="d-none">
             <div id="portfolioInOut"></div>
             <div class="card position-absolute cardPortfolio">
               <div class="card-body d-flex justify-content-between w-100 position-relative">
-                <!-- close -->
                 <div id="closeIcon">
                   <p>x</p>
                 </div>
@@ -393,7 +393,6 @@
             </div>
           </div>
 
-          <!-- slider -->
           <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -524,7 +523,7 @@
     </iframe>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8 col-sm-12">
           <form action="#">
             <h2>Biz bilan bog'laning</h2>
             <div class="inputs">
@@ -558,13 +557,12 @@
     </div>
   </div>
 
+
   <!-- Futter Page -->
   <div id="futter">
-    <!-- code -->
-
     <div class="container">
       <div class="row">
-        <div class="col-md-4 colOne">
+        <div class="col-md-12 col-xl-4 col-sm-12 colOne">
           <div class="row">
             <div class="col d-flex align-items-center">
               <img class="logo-img" src="./MIT_Futter_Page/img/logo.svg" alt="" />
@@ -590,61 +588,68 @@
           </div>
         </div>
 
-        <div class="col-md-4 colTwo">
-          <div class="row d-block mt-5">
+        <div class="col-md-6 col-xl-4 col-sm-12 colTwo">
+          <div class="row d-block  displayFlexMesseger">
             <div class="col d-flex position-relative">
               <a href="#" class="FooterInstagram">
-                <img class="mt-5 ml-3" src="./MIT_Futter_Page/img/instagramFooter.svg" alt="" />
+                <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3 instagramMedia"
+                  src="./MIT_Futter_Page/img/instagramFooter.svg" alt="" />
               </a>
-              <img class="mt-5 ml-3 InstagramPol" src="./MIT_Futter_Page/img/polygonFooter.svg" alt="" />
-              <img class="position-absolute carImgOne" src="./MIT_Futter_Page/img/cardFooterImg.svg" alt="" />
+              <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3 InstagramPol" src="./MIT_Futter_Page/img/polygonFooter.svg"
+                alt="" />
+              <img class="position-absolute carImgOne mt-xl-5 mt-md-5" src="./MIT_Futter_Page/img/cardFooterImg.svg"
+                alt="" />
             </div>
 
             <div class="col d-flex position-relative">
               <a href="#" class="FooterFacebook">
-                <img class="mt-4 ml-3" src="./MIT_Futter_Page/img/facebookFooter.svg" alt="" />
+                <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3  facebookMedia"
+                  src="./MIT_Futter_Page/img/facebookFooter.svg" alt="" />
               </a>
-              <img class="mt-4 ml-3 FacebookPol" src="./MIT_Futter_Page/img/polygonFooter.svg" alt="" />
-              <img class="position-absolute carImgTwo" src="./MIT_Futter_Page/img/cardFooterImg.svg" alt="" />
+              <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3 FacebookPol" src="./MIT_Futter_Page/img/polygonFooter.svg"
+                alt="" />
+              <img class="position-absolute carImgTwo mt-xl-5" src="./MIT_Futter_Page/img/cardFooterImg.svg" alt="" />
             </div>
 
             <div class="col d-flex">
               <a href="#" class="FooterIN">
-                <img class="mt-4 ml-3" src="./MIT_Futter_Page/img/inFooter.svg" alt="" />
+                <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3 inMedia" src="./MIT_Futter_Page/img/inFooter.svg" alt="" />
               </a>
-              <img class="mt-4 ml-3 InPol" src="./MIT_Futter_Page/img/polygonFooter.svg" alt="" />
-              <img class="position-absolute carImgThree" src="./MIT_Futter_Page/img/cardFooterImg.svg" alt="" />
+              <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3 InPol" src="./MIT_Futter_Page/img/polygonFooter.svg" alt="" />
+              <img class="position-absolute carImgThree mt-xl-5 mt-md-5" src="./MIT_Futter_Page/img/cardFooterImg.svg"
+                alt="" />
             </div>
-
-            <div class="col d-flex">
+            <div class="col d-flex ">
               <a href="#" class="FooterYoutube">
-                <img class="mt-4 ml-3" width="43" src="./MIT_Futter_Page/img/youtubeFooter.svg" alt="" />
+                <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3 youtubeMedia" width="43"
+                  src="./MIT_Futter_Page/img/youtubeFooter.svg" alt="" />
               </a>
-              <img class="mt-4 ml-3 YouTubePol" src="./MIT_Futter_Page/img/polygonFooter.svg" alt="" />
+              <img class="mt-xl-5 mt-md-5 ml-xl-3 ml-md-3 YouTubePol" src="./MIT_Futter_Page/img/polygonFooter.svg"
+                alt="" />
               <img class="position-absolute carImgFour" src="./MIT_Futter_Page/img/cardFooterImg.svg" alt="" />
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 colFour">
-          <div class="row mt-5">
-            <div class="col-md-12">
+        <div class="col-md-6 col-xl-4 col-sm-12 colFour">
+          <div class="row mt-xl-5 ml-md-3">
+            <div class="col-xl-12 col-md-12 col-sm-12 mt-md-5">
               <div class="row ml-1 d-flex align-items-center">
-                <div class="col-md-2">
+                <div class="col-xl-2 col-sm-2 col-md-2">
                   <img src="./MIT_Futter_Page/img/phoneFooter.svg" alt="" />
                 </div>
-                <div class="col-md-10 lastlastText mt-3">
+                <div class="col-md-10 col-sm-10 lastlastText mt-3">
                   <p>+998 (99) 999-99-99</p>
                   <p>+998 (99) 999-99-99</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-12 mt-3">
+            <div class="col-xl-12 col-md-12 col-sm-12 mt-3">
               <div class="row ml-1 d-flex align-items-center">
-                <div class="col-md-2">
+                <div class="col-xl-2 col-sm-2 col-md-2">
                   <img src="./MIT_Futter_Page/img/locationFooter.svg" alt="" />
                 </div>
-                <div class="col-md-10 mt-3">
+                <div class="col-md-10 col-sm-10 col-xl-10 mt-3">
                   <p class="lastTextFooter">
                     2 Mir Said Baraka Street, Samarkand, <br />
                     Oʻzbekiston
@@ -652,12 +657,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12 mt-3">
+            <div class="col-xl-12 col-md-12 col-sm-12 mt-3">
               <div class="row ml-1 d-flex align-items-center">
-                <div class="col-md-2">
+                <div class="col-xl-2 col-sm-2 col-md-2">
                   <img src="./MIT_Futter_Page/img/senEmailFooter.svg" alt="" />
                 </div>
-                <div class="col-md-10 lastlastText mt-3">
+                <div class="col-md-10 col-sm-10 col-xl-10 mt-3 lastlastText">
                   <p>mitcampany@gmail.com</p>
                   <p>mitacademy@gmail.com</p>
                 </div>
@@ -667,8 +672,6 @@
         </div>
       </div>
     </div>
-
-    <!-- code end -->
   </div>
 
   <!-- Futter Page end -->
@@ -689,6 +692,9 @@
   <script src="./MIT_Portfolio_Page/script/main.js"></script>
   <!-- Contact Page JS -->
   <script src="./MIT_Contact_Page/js/contact.js"></script>
+
+  <!-- aos init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

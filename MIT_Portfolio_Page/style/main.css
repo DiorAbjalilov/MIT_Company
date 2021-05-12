@@ -226,15 +226,34 @@ body {
   background-color: rgb(255, 255, 255, 0.9);
 }
 
-.btn-primary {
+#portfolio .btn-primary {
   background-color: #000000ce !important;
   border: none !important;
 }
-.btn-primary:hover {
+#portfolio .btn-primary:hover {
   transition: background-color 0.2s;
   background-color: #000000e7 !important;
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   -ms-transition: background-color 0.2s;
   -o-transition: background-color 0.2s;
+}
+@media (max-width: 665px) {
+  #portfolio #message_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #portfolio #message_title a {
+    margin: 0;
+    width: 180px;
+    margin-right: 10px;
+  }
+  #portfolio #message_title p {
+    width: 80%;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    color: black;
+  }
 }
