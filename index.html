@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <!-- Bootstrap link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
@@ -103,7 +104,7 @@
     <!-- navbar end -->
     <!-- homeleft start -->
     <div class="homeLeft">
-      <div class="group">
+      <div data-aos="fade-right" class="group">
         <h1>MIT <br />COMPANY</h1>
 
         <p>
@@ -129,7 +130,7 @@
   <div id="services">
     <div class="container">
       <h2 class="text-center">Bizning xizmatlarimiz</h2>
-      <section>
+      <section data-aos="fade-up">
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -164,9 +165,9 @@
         <p></p>
         <button onclick="closeModalFunc()">close</button>
       </div>
-      <div class="services-a">
-        <a href="/">Biz bilan aloqa</a>
-        <p>
+      <div data-aos="fade-up" class="services-a">
+        <a data-aos="fade-right" href="/">Biz bilan aloqa</a>
+        <p data-aos="fade-left">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           aut ratione sunt esse exercitationem nihil rem quaerat eius. Animi,
           dolores quam?
@@ -181,7 +182,7 @@
       <div class="title_h1">
         <h1><span>Biz</span> Haqimizda</h1>
       </div>
-      <div class="slider">
+      <div data-aos="fade-up" class="slider">
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide boxSwiper">
@@ -357,7 +358,7 @@
 
   <!-- Portfolio Page -->
   <div id="portfolio">
-    <div class="container">
+    <div data-aos="fade-up" class="container">
       <div class="row">
         <div class="col-md-12 portfolio">
           <div class="title_portfolio">
@@ -504,14 +505,14 @@
         </div>
       </div>
     </div>
-    <div class="message">
+    <div data-aos="fade-up" class="message">
       <div class="container" id="message_title">
-        <p>
+        <p data-aos="fade-right">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           aut ratione sunt esse exercitationem nihil rem quaerat eius. Animi,
           dolores quam?
         </p>
-        <a href="/">Biz bilan aloqa</a>
+        <a data-aos="fade-left" href="/">Biz bilan aloqa</a>
       </div>
     </div>
   </div>
@@ -524,7 +525,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
-          <form action="#">
+          <form data-aos="fade-down" action="#">
             <h2>Biz bilan bog'laning</h2>
             <div class="inputs">
               <div class="input-group">
@@ -562,7 +563,7 @@
   <div id="futter">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-xl-4 col-sm-12 colOne">
+        <div data-aos="fade-right" class="col-md-12 col-xl-4 col-sm-12 colOne">
           <div class="row">
             <div class="col d-flex align-items-center">
               <img class="logo-img" src="./MIT_Futter_Page/img/logo.svg" alt="" />
@@ -588,7 +589,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-xl-4 col-sm-12 colTwo">
+        <div data-aos="fade-down" class="col-md-6 col-xl-4 col-sm-12 colTwo">
           <div class="row d-block  displayFlexMesseger">
             <div class="col d-flex position-relative">
               <a href="#" class="FooterInstagram">
@@ -631,7 +632,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-xl-4 col-sm-12 colFour">
+        <div data-aos="fade-left" class="col-md-6 col-xl-4 col-sm-12 colFour">
           <div class="row mt-xl-5 ml-md-3">
             <div class="col-xl-12 col-md-12 col-sm-12 mt-md-5">
               <div class="row ml-1 d-flex align-items-center">
@@ -695,6 +696,10 @@
 
   <!-- aos init -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
