@@ -300,6 +300,7 @@
   #home {
     height: auto !important ;
     box-sizing: border-box !important;
+    position: relative;
   }
 
   #home nav .logo {
